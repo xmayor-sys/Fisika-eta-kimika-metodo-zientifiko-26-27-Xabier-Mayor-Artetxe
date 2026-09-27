@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodo Zientifikoa — Fisika & Kimika</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --tinta:#161b22;
+    --papel:#fbf9f4;
+    --noche:#14213d;
+    --cobre:#a6512c;
+    --menta:#2e8b7c;
+    --linea: rgba(251,249,244,0.18);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{ margin:0; background:var(--papel); color:var(--tinta); font-family:'Source Serif 4', Georgia, serif; line-height:1.5; }
+  .mono{ font-family:'IBM Plex Mono', ui-monospace, monospace; letter-spacing:0.01em; }
+
+  .hero{ background:var(--noche); color:var(--papel); padding:5rem 1.5rem; text-align:center; }
+  .hero .etiqueta-top{ font-family:'IBM Plex Mono', monospace; font-size:0.85rem; color:var(--cobre); background:rgba(251,249,244,0.08); display:inline-block; padding:0.35rem 0.9rem; border-radius:999px; margin-bottom:1.2rem; }
+  .hero h1{ font-size:clamp(2rem, 5vw, 3.2rem); font-weight:600; margin:0 0 0.6rem; }
+  .hero p{ color:#9fb3d1; font-size:1rem; margin:0; }
+
+  .gidoia{ max-width:640px; margin:0 auto; padding:3.5rem 1.5rem; }
+  .gidoia h2{ text-align:center; font-size:1.3rem; font-weight:600; margin:0 0 1.5rem; }
+  .gidoia ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.7rem; }
+  .gidoia a{ display:block; text-align:center; background:#f4efdc; color:var(--tinta); text-decoration:none; padding:0.8rem; border-radius:4px; font-weight:600; }
+
+  section.bloke{ max-width:760px; margin:0 auto; padding:3.5rem 1.5rem; border-top:1px solid #e4dfd2; }
+  section.bloke h2{ font-size:1.6rem; font-weight:600; margin:0 0 1.2rem; }
+  section.bloke p{ margin:0 0 1rem; }
+  section.bloke ol, section.bloke ul.zatiak{ margin:0; padding-left:1.3rem; }
+  ul.zatiak{ list-style:none; padding:0; margin-top:0.8rem; }
+  ul.zatiak li{ padding:0.5rem 0; border-bottom:1px solid #e4dfd2; }
+
+  .seccion-video{ max-width:760px; margin:0 auto; padding:3.5rem 1.5rem; border-top:1px solid #e4dfd2; }
+  .marco-video{ background:var(--tinta); padding:0.6rem; border-radius:4px; }
+  video{ display:block; width:100%; border-radius:2px; background:#000; }
+
+  .emaitzak img{ width:100%; height:auto; border-radius:4px; display:block; margin-top:1rem; }
+
+  .ondorioa{ background:var(--noche); color:var(--papel); }
+  .ondorioa h2{ color:var(--papel); }
+
+  .eskerrik{ text-align:center; padding:4.5rem 1.5rem; }
+  .eskerrik h2{ font-size:2.2rem; font-weight:700; margin:0; }
+
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<section class="hero">
+  <span class="etiqueta-top mono">Fisika &amp; Kimika</span>
+  <h1>Metodo Zientifikoa</h1>
+  <p>Xabier Mayor Artetxe</p>
+</section>
+
+<!-- GIDOIA -->
+<div class="gidoia">
+  <h2>Gidoia</h2>
+  <ul>
+    <li><a href="#behaketa">Behaketa</a></li>
+    <li><a href="#galdera">Galdera</a></li>
+    <li><a href="#hipotesia">Hipotesia</a></li>
+    <li><a href="#esperimentasioa">Esperimentasioa</a></li>
+    <li><a href="#emaitzak">Emaitzak</a></li>
+  </ul>
+</div>
+
+<!-- BEHAKETA -->
+<section class="bloke" id="behaketa">
+  <h2>Behaketa</h2>
+  <p>Sagar bat moztu eta aire librean uztean, marroi kolorea hartzen du arineketan oxigenoa sagarra oxidatu egiten duelako.</p>
+</section>
+
+<!-- GALDERA -->
+<section class="bloke" id="galdera">
+  <h2>Galdera</h2>
+  <p>Zein likido egiten du sagarra ez oxidatzeko?</p>
+</section>
+
+<!-- HIPOTESIA -->
+<section class="bloke" id="hipotesia">
+  <h2>Hipotesia</h2>
+  <p>Limoiaren zukua sagarra ez oxidatzeko balio du. C bitamina daukalako.</p>
+</section>
+
+<!-- EXPERIMENTASIOA -->
+<section class="bloke" id="esperimentasioa">
+  <h2>Experimentasioa</h2>
+  <ol>
+    <li>Moztu sagarra 4 zatitan.</li>
+    <li>Jarrri sagar puxkak platerrean eta limoi zukua gainetik bota.</li>
+  </ol>
+  <ul class="zatiak">
+    <li>1. zatia: Ezer ez</li>
+    <li>2. zatia: Ura</li>
+    <li>3. zatia: limoi zukua</li>
+    <li>4. zatia: ozpina</li>
+  </ul>
+</section>
+
+<!-- BIDEOA -->
+<section class="seccion-video">
+  <h2>Bideoa</h2>
+  <div class="marco-video">
+    <video controls preload="metadata">
+      <source src="video.mp4" type="video/mp4">
+      Zure nabigatzaileak ez du bideo-erreprodukzioa onartzen.
+    </video>
+  </div>
+</section>
+
+<!-- EMAITZAK -->
+<section class="bloke emaitzak" id="emaitzak">
+  <h2>Emaitzak</h2>
+  <img src="emaitzak.png" alt="Sagar-zatien konparaketa: ura, ezer, limoia eta ozpina">
+</section>
+
+<!-- ONDORIOA -->
+<section class="bloke ondorioa">
+  <h2>Ondorioa</h2>
+  <p>Gehien oxidatu zen puxka ezer zeukana izan zen eta gutxien limoiarena. Ozpinaren puxka ez zen asko oxidatu baina limoia daukana goxoago egongo da bestea baino. Ura zeukana ere oxidatu zen. Horren ondorioz gure hipotesia zuzena zen.</p>
+</section>
+
+<!-- ESKERRIK ASKO -->
+<section class="eskerrik">
+  <h2>Eskerrik asko!!!</h2>
+</section>
+
+</body>
+</html>
